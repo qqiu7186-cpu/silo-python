@@ -1,0 +1,10 @@
+{
+  "client": "minio",
+  "upstream_version": "7.2.20",
+  "upstream_commit": "f671ca948b35978c39a3100e4ae0e9b93416b911",
+  "tests": 116,
+  "client_test_modules": 18,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 2
+}

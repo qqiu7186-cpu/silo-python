@@ -1,0 +1,33 @@
+"""Compatibility exports from minio.notificationconfig (minio 7.2.20)."""
+from minio.notificationconfig import (
+    A as A,
+    ABC as ABC,
+    B as B,
+    C as C,
+    CloudFuncConfig as CloudFuncConfig,
+    CommonConfig as CommonConfig,
+    D as D,
+    E as E,
+    ET as ET,
+    Element as Element,
+    FilterRule as FilterRule,
+    NotificationConfig as NotificationConfig,
+    Optional as Optional,
+    PrefixFilterRule as PrefixFilterRule,
+    QueueConfig as QueueConfig,
+    SubElement as SubElement,
+    SuffixFilterRule as SuffixFilterRule,
+    TopicConfig as TopicConfig,
+    Type as Type,
+    TypeVar as TypeVar,
+    absolute_import as absolute_import,
+    annotations as annotations,
+    cast as cast,
+    dataclass as dataclass,
+    field as field,
+    find as find,
+    findall as findall,
+    findtext as findtext,
+)
+
+__all__ = ['A', 'ABC', 'B', 'C', 'CloudFuncConfig', 'CommonConfig', 'D', 'E', 'ET', 'Element', 'FilterRule', 'NotificationConfig', 'Optional', 'PrefixFilterRule', 'QueueConfig', 'SubElement', 'SuffixFilterRule', 'TopicConfig', 'Type', 'TypeVar', 'absolute_import', 'annotations', 'cast', 'dataclass', 'field', 'find', 'findall', 'findtext']

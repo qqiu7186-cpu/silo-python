@@ -1,0 +1,265 @@
+{
+  "client": "silo",
+  "upstream_commit": "f671ca948b35978c39a3100e4ae0e9b93416b911",
+  "endpoint": "localhost:9000",
+  "secure": false,
+  "pass": 49,
+  "fail": 0,
+  "not_implemented": 0,
+  "results": [
+    {
+      "name": "minio-py:test_make_bucket_default_region",
+      "status": "PASS",
+      "duration": 17
+    },
+    {
+      "name": "minio-py:test_make_bucket_with_region",
+      "status": "NOT_APPLICABLE"
+    },
+    {
+      "name": "minio-py:test_negative_make_bucket_invalid_name",
+      "status": "PASS"
+    },
+    {
+      "name": "minio-py:test_list_buckets",
+      "status": "PASS",
+      "duration": 7
+    },
+    {
+      "name": "minio-py:test_fput_object_small_file",
+      "status": "PASS",
+      "duration": 18
+    },
+    {
+      "name": "minio-py:test_fput_object_large_file",
+      "status": "PASS",
+      "duration": 85
+    },
+    {
+      "name": "minio-py:test_fput_object_with_content_type",
+      "status": "PASS",
+      "duration": 15
+    },
+    {
+      "name": "minio-py:test_copy_object_no_copy_condition",
+      "status": "PASS",
+      "duration": 6
+    },
+    {
+      "name": "minio-py:test_copy_object_etag_match",
+      "status": "PASS",
+      "duration": 8
+    },
+    {
+      "name": "minio-py:test_copy_object_with_metadata",
+      "status": "PASS",
+      "duration": 8
+    },
+    {
+      "name": "minio-py:test_copy_object_negative_etag_match",
+      "status": "PASS",
+      "duration": 4
+    },
+    {
+      "name": "minio-py:test_copy_object_modified_since",
+      "status": "PASS",
+      "duration": 5
+    },
+    {
+      "name": "minio-py:test_copy_object_unmodified_since",
+      "status": "PASS",
+      "duration": 4
+    },
+    {
+      "name": "minio-py:test_put_object",
+      "status": "PASS",
+      "duration": 2103
+    },
+    {
+      "name": "minio-py:test_negative_put_object_with_path_segment",
+      "status": "PASS",
+      "duration": 7
+    },
+    {
+      "name": "minio-py:test_stat_object",
+      "status": "PASS",
+      "duration": 2123
+    },
+    {
+      "name": "minio-py:test_stat_object_version",
+      "status": "PASS",
+      "duration": 2121
+    },
+    {
+      "name": "minio-py:test_get_object",
+      "status": "PASS",
+      "duration": 173
+    },
+    {
+      "name": "minio-py:test_get_object_version",
+      "status": "PASS",
+      "duration": 169
+    },
+    {
+      "name": "minio-py:test_fget_object",
+      "status": "PASS",
+      "duration": 165
+    },
+    {
+      "name": "minio-py:test_fget_object_version",
+      "status": "PASS",
+      "duration": 181
+    },
+    {
+      "name": "minio-py:test_get_object_with_default_length",
+      "status": "PASS",
+      "duration": 165
+    },
+    {
+      "name": "minio-py:test_get_partial_object",
+      "status": "PASS",
+      "duration": 171
+    },
+    {
+      "name": "minio-py:test_list_objects_v1",
+      "status": "PASS",
+      "duration": 11
+    },
+    {
+      "name": "minio-py:test_list_object_v1_versions",
+      "status": "PASS",
+      "duration": 12
+    },
+    {
+      "name": "minio-py:test_list_objects_with_prefix",
+      "status": "PASS",
+      "duration": 12
+    },
+    {
+      "name": "minio-py:test_list_objects_with_1001_files",
+      "status": "PASS",
+      "duration": 4294
+    },
+    {
+      "name": "minio-py:test_list_objects",
+      "status": "PASS",
+      "duration": 10
+    },
+    {
+      "name": "minio-py:test_list_object_versions",
+      "status": "PASS",
+      "duration": 8
+    },
+    {
+      "name": "minio-py:test_presigned_get_object_default_expiry",
+      "status": "PASS",
+      "duration": 5
+    },
+    {
+      "name": "minio-py:test_presigned_get_object_expiry",
+      "status": "PASS",
+      "duration": 2013
+    },
+    {
+      "name": "minio-py:test_presigned_get_object_response_headers",
+      "status": "PASS",
+      "duration": 8
+    },
+    {
+      "name": "minio-py:test_presigned_get_object_version",
+      "status": "PASS",
+      "duration": 14
+    },
+    {
+      "name": "minio-py:test_presigned_put_object_default_expiry",
+      "status": "PASS",
+      "duration": 10
+    },
+    {
+      "name": "minio-py:test_presigned_put_object_expiry",
+      "status": "PASS",
+      "duration": 2014
+    },
+    {
+      "name": "minio-py:test_presigned_post_policy",
+      "status": "PASS",
+      "duration": 7
+    },
+    {
+      "name": "minio-py:test_thread_safe",
+      "status": "PASS",
+      "duration": 682
+    },
+    {
+      "name": "minio-py:test_set_get_bucket_versioning",
+      "status": "PASS",
+      "duration": 6
+    },
+    {
+      "name": "minio-py:test_get_bucket_policy",
+      "status": "PASS",
+      "duration": 6
+    },
+    {
+      "name": "minio-py:test_set_bucket_policy_readonly",
+      "status": "PASS",
+      "duration": 4
+    },
+    {
+      "name": "minio-py:test_set_bucket_policy_readwrite",
+      "status": "PASS",
+      "duration": 4
+    },
+    {
+      "name": "minio-py:test_get_bucket_notification",
+      "status": "PASS",
+      "duration": 5
+    },
+    {
+      "name": "minio-py:test_select_object_content",
+      "status": "PASS",
+      "duration": 4
+    },
+    {
+      "name": "minio-py:test_upload_snowball_objects",
+      "status": "PASS",
+      "duration": 823
+    },
+    {
+      "name": "minio-py:test_upload_snowball_objects_with_staging",
+      "status": "PASS",
+      "duration": 879
+    },
+    {
+      "name": "minio-py:test_remove_object",
+      "status": "PASS",
+      "duration": 4
+    },
+    {
+      "name": "minio-py:test_remove_object_version",
+      "status": "PASS",
+      "duration": 9
+    },
+    {
+      "name": "minio-py:test_remove_objects",
+      "status": "PASS",
+      "duration": 29
+    },
+    {
+      "name": "minio-py:test_remove_object_versions",
+      "status": "PASS",
+      "duration": 26
+    },
+    {
+      "name": "minio-py:test_remove_bucket",
+      "status": "PASS",
+      "duration": 2
+    }
+  ],
+  "limitations": [
+    "HTTP run excludes SSE-C tests",
+    "AWS-only cases short-circuit for a local endpoint",
+    "notification test only checks empty configuration"
+  ],
+  "not_applicable": 1
+}

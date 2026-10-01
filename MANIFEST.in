@@ -1,0 +1,6 @@
+include .env.example
+recursive-include docs *.md *.json
+recursive-include examples *.py
+recursive-include tests *.py
+include verification.json
+recursive-include tools *.py

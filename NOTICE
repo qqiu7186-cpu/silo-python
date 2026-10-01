@@ -1,0 +1,7 @@
+This is an unofficial Silo Python SDK. It is not endorsed by MinIO or PGSTY.
+The package depends on minio 7.2.20, distributed separately under Apache-2.0.
+Upstream: https://github.com/minio/minio-py
+Upstream copyright: MinIO, Inc.
+The compatibility modules re-export upstream objects; upstream implementation
+source is not bundled in this distribution. Keep minio's own license and
+notices with any redistribution of that dependency.

@@ -1,0 +1,126 @@
+{
+  "checked_at": "2026-10-01T11:56:39.689138+00:00",
+  "sdk_version": "0.1.0",
+  "upstream": "minio==7.2.20",
+  "python": "3.13.3",
+  "server_release": "RELEASE.2026-09-16T00-00-00Z",
+  "server_endpoint": "http://localhost:9000",
+  "server_storage": "Docker volume silo-local-data",
+  "public_methods": 63,
+  "auxiliary_modules": 25,
+  "auxiliary_symbols": 707,
+  "tests": {
+    "tests": "67",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "1.028"
+  },
+  "clean_wheel_install": "PASS: fresh Python 3.13 venv installed final wheel and dependency check passed; Python 3.9 editable install replaced with wheel. Both imported from site-packages outside source/PYTHONPATH and completed live upload/download/cleanup.",
+  "initial_environment_failure": {
+    "symptom": "HTTP 500 on bucket configuration/deletion with macOS bind mount",
+    "server_error": "resource deadlock avoided (EDEADLK)",
+    "resolution": "Copied all 403 files with matching SHA256 to Docker persistent volume. Original host directory preserved. Same full suite passes on named-volume storage."
+  },
+  "not_live_verified": [
+    "external credential providers",
+    "admin APIs",
+    "KMS/encryption",
+    "object lock/retention/legal hold",
+    "replication",
+    "notification delivery/listening",
+    "presigned POST",
+    "append",
+    "prompt",
+    "TLS",
+    "distributed cluster/recovery"
+  ],
+  "review": "Independent re-review: no important findings in complete function identity, constructor/signing and upstream comparison tests. Both runners enforce clean tracked upstream source.",
+  "inherited_implementation_functions": 82,
+  "requires_python": ">=3.9",
+  "upstream_unit_comparison": {
+    "minio": {
+      "client": "minio",
+      "upstream_version": "7.2.20",
+      "upstream_commit": "f671ca948b35978c39a3100e4ae0e9b93416b911",
+      "tests": 116,
+      "client_test_modules": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2
+    },
+    "silo": {
+      "client": "silo",
+      "upstream_version": "7.2.20",
+      "upstream_commit": "f671ca948b35978c39a3100e4ae0e9b93416b911",
+      "tests": 116,
+      "client_test_modules": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2
+    }
+  },
+  "upstream_functional_comparison": {
+    "minio": {
+      "client": "minio",
+      "upstream_commit": "f671ca948b35978c39a3100e4ae0e9b93416b911",
+      "endpoint": "localhost:9000",
+      "secure": false,
+      "pass": 49,
+      "fail": 0,
+      "not_implemented": 0,
+      "limitations": [
+        "HTTP run excludes SSE-C tests",
+        "AWS-only cases short-circuit for a local endpoint",
+        "notification test only checks empty configuration"
+      ],
+      "not_applicable": 1
+    },
+    "silo": {
+      "client": "silo",
+      "upstream_commit": "f671ca948b35978c39a3100e4ae0e9b93416b911",
+      "endpoint": "localhost:9000",
+      "secure": false,
+      "pass": 49,
+      "fail": 0,
+      "not_implemented": 0,
+      "limitations": [
+        "HTTP run excludes SSE-C tests",
+        "AWS-only cases short-circuit for a local endpoint",
+        "notification test only checks empty configuration"
+      ],
+      "not_applicable": 1
+    }
+  },
+  "runtime_tests": {
+    "3.13.3": {
+      "tests": "67",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "1.028"
+    },
+    "3.9.25": {
+      "tests": "67",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.881"
+    }
+  },
+  "upstream_unit_python39": {
+    "client": "silo",
+    "upstream_version": "7.2.20",
+    "upstream_commit": "f671ca948b35978c39a3100e4ae0e9b93416b911",
+    "tests": 116,
+    "client_test_modules": 18,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 2
+  },
+  "auxiliary_symbols_by_python": {
+    "3.13.3": 707,
+    "3.9.25": 706
+  },
+  "runtime_compatibility_fix": "Matched upstream conditional export of datetime.UTC; all same-version runtime symbols preserve identity. Python floor aligned to minio >=3.9."
+}
