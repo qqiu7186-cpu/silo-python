@@ -1,0 +1,29 @@
+name: Publish to PyPI
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/silo-python-sdk/
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify release artifacts
+        working-directory: dist
+        run: sha256sum --check SHA256SUMS
+      - name: Check package metadata
+        run: |
+          python -m pip install twine
+          python -m twine check dist/*.whl dist/*.tar.gz
+      - name: Publish verified packages
+        uses: pypa/gh-action-pypi-publish@release/v1
