@@ -25,5 +25,11 @@ jobs:
         run: |
           python -m pip install twine
           python -m twine check dist/*.whl dist/*.tar.gz
+      - name: Stage package files
+        run: |
+          mkdir publish-dist
+          cp dist/*.whl dist/*.tar.gz publish-dist/
       - name: Publish verified packages
         uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: publish-dist/
