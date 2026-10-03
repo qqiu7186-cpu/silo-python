@@ -4,7 +4,7 @@
 
 ## 安装
 
-已发布至 [PyPI：silo-python-sdk](https://pypi.org/project/silo-python-sdk/)，当前版本为 **0.1.0**，支持 Python 3.9+。
+已发布至 [PyPI：silo-python-sdk](https://pypi.org/project/silo-python-sdk/)，当前版本为 **0.1.1**，支持 Python 3.9+。
 
 ```bash
 python -m pip install silo-python-sdk
@@ -13,7 +13,7 @@ python -m pip install silo-python-sdk
 需要固定版本时：
 
 ```bash
-python -m pip install silo-python-sdk==0.1.0
+python -m pip install silo-python-sdk==0.1.1
 ```
 
 **安装名是 `silo-python-sdk`，Python 导入名始终是 `silo`：**
@@ -21,6 +21,8 @@ python -m pip install silo-python-sdk==0.1.0
 ```python
 from silo import Silo
 ```
+
+0.1.1 为文档修订版本，更新 PyPI 安装说明，SDK 功能保持不变。
 
 安装时会自动安装固定版本的 `minio==7.2.20` 及其依赖。发布后的包已从 PyPI 在全新环境中安装，并通过本机 Silo 上传、下载验证。
 
@@ -33,7 +35,7 @@ python -m pip install .
 或安装仓库中附带的 wheel：
 
 ```bash
-python -m pip install dist/silo_python_sdk-0.1.0-py3-none-any.whl
+python -m pip install dist/silo_python_sdk-0.1.1-py3-none-any.whl
 ```
 
 ## 连接和迁移

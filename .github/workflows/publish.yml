@@ -28,7 +28,8 @@ jobs:
       - name: Stage package files
         run: |
           mkdir publish-dist
-          cp dist/*.whl dist/*.tar.gz publish-dist/
+          version=$(python -c 'import tomllib; print(tomllib.load(open("pyproject.toml", "rb"))["project"]["version"])')
+          cp "dist/silo_python_sdk-${version}-py3-none-any.whl" "dist/silo_python_sdk-${version}.tar.gz" publish-dist/
       - name: Publish verified packages
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
